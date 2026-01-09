@@ -13,11 +13,15 @@ def oddNumbers(n:int) ->str:
     x=n
     while i<x:
         if i%2==1:
-            str0 = str0 + " " + str(i)
+            if i==1:
+                str0 = str0  + str(i)
+            else:
+                str0 = str0 + " " + str(i)
         i=i+1
     print(str0)
 
-oddNumbers(9)
+oddNumbers(8)
+oddNumbers(-8)
 
 def backwards(n)-> int:
     """
@@ -31,11 +35,14 @@ def backwards(n)-> int:
     i=x
     str0=""
     while i>0:
-       str0=str0+ " " +str(i)
+       if i==x:
+           str0=str0 +str(i)
+       else:
+           str0 = str0 + " " + str(i)
        i=i-1
     print(str0)
 
-backwards(20)
+backwards(5)
 
 def randomRepeating():
     """
@@ -80,7 +87,6 @@ def reverse(word:str)->str:
     """
     str0 = word
     str1=""
-    print(str0)
     x=len(str0)
     i=x
     while i>0:
@@ -89,7 +95,7 @@ def reverse(word:str)->str:
     print(str1)
 
 SS=reverse("Hello")
-
+reverse("Hello World")
 
 def fizzBuzzContinuous(n):
     """
@@ -105,14 +111,18 @@ def fizzBuzzContinuous(n):
     :param n:
     :return:
     """
+    str0=""
     for i in range(n):
         i1=i+1
-        if i1 % 3 == 0 and i1 % 5 == 0:
-            print("FizzBuzz")
-        if i1 % 3 == 0 and i1 % 5 != 0:
-            print("Fizz")
-        if i1 % 5 == 0 and i1 % 3 != 0:
-            print("Buzz")
+        if i1==1:
+            str0=str0+str(i1)
+        else:
+            if i1 % 3 == 0 and i1 % 5 == 0:
+                str0=str0+ " " + "FizzBuzz"
+            if i1 % 3 == 0 and i1 % 5 != 0:
+                str0=str0+ " " + "Fizz"
+            if i1 % 5 == 0 and i1 % 3 != 0:
+                str0=str0+ " " + "Buzz"
 
 fizzBuzzContinuous(15)
 
