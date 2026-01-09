@@ -166,4 +166,4 @@ def fibonacci(n):
 
     print(str0)
 
-fibonacci(20)
+fibonacci(300)
