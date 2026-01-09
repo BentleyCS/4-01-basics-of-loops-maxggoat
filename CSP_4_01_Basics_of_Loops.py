@@ -147,5 +147,5 @@ if n >= 3:
     while i <= n:
         str0=str0+" "+str(x[i-1] + x[i-2])
         x.append(x[i - 1] + x[i - 2])
-
+        i=i+1
 print(fibonacci(6))
