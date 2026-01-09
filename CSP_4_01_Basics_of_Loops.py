@@ -148,5 +148,4 @@ if n >= 3:
         str0=str0+" "+str(x[i-1] + x[i-2])
         x.append(x[i - 1] + x[i - 2])
 
-
-print(fibonacci(300))
+print(fibonacci(6))
