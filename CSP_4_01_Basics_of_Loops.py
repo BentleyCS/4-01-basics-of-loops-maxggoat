@@ -11,7 +11,7 @@ def oddNumbers(n:int) ->str:
     str0 = ""
     i=0
     x=n
-    while i<x:
+    while i<=x:
         if i%2==1:
             if i==1:
                 str0 = str0  + str(i)
@@ -20,8 +20,10 @@ def oddNumbers(n:int) ->str:
         i=i+1
     print(str0)
 
+oddNumbers(5)
 oddNumbers(8)
 oddNumbers(-8)
+oddNumbers(80)
 
 def backwards(n)-> int:
     """
