@@ -117,18 +117,20 @@ def fizzBuzzContinuous(n)->str:
             str0=str0+str(i1)
         else:
             if i1 % 3 == 0 and i1 % 5 == 0:
-                str0=str0+ " " + "FizzBuzz"
+                str0=str0+ " " + "fizzbuzz"
             if i1 % 3 == 0 and i1 % 5 != 0:
-                str0=str0+ " " + "Fizz"
+                str0=str0+ " " + "fizz"
             if i1 % 5 == 0 and i1 % 3 != 0:
-                str0=str0+ " " + "Buzz"
+                str0=str0+ " " + "buzz"
             if i1 % 5 != 0 and i1 % 3 != 0:
                 str0 = str0 + " " + str(i1)
 
     print(str0)
     return str0
 fizzBuzzContinuous(15)
-
+fizzBuzzContinuous(5)
+fizzBuzzContinuous(1)
+fizzBuzzContinuous(45)
 
 def collatz(n):
     """
