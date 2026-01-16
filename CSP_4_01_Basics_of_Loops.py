@@ -9,7 +9,7 @@ def oddNumbers(n:int) ->str:
     """
 
     str0 = ""
-    i=0
+    i=1
     x=n
     while i<=x:
         if i%2==1:
@@ -19,11 +19,12 @@ def oddNumbers(n:int) ->str:
                 str0 = str0 + " " + str(i)
         i=i+1
     print(str0)
-
+    return str0
 oddNumbers(5)
 oddNumbers(8)
 oddNumbers(-8)
 oddNumbers(80)
+
 
 def backwards(n)-> int:
     """
@@ -43,7 +44,7 @@ def backwards(n)-> int:
            str0 = str0 + " " + str(i)
        i=i-1
     print(str0)
-
+    return str0
 backwards(5)
 
 def randomRepeating():
@@ -95,7 +96,7 @@ def reverse(word:str)->str:
         str1=str1+str0[i-1]
         i=i-1
     print(str1)
-
+    return str1
 SS=reverse("Hello")
 reverse("Hello World")
 
@@ -129,7 +130,7 @@ def fizzBuzzContinuous(n):
                 str0 = str0 + " " + str(i1)
 
     print(str0)
-
+    return str0
 fizzBuzzContinuous(15)
 
 def collatz(n):
@@ -149,7 +150,7 @@ def collatz(n):
         else:
             n = 3*n + 1
         print(n)
-
+    return n
 collatz(5)
 
 
@@ -180,5 +181,5 @@ def fibonacci(n):
             i=i+1
 
     print(str0)
-
+    return str0
 fibonacci(300)
