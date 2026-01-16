@@ -20,10 +20,7 @@ def oddNumbers(n:int) ->str:
         i=i+1
     print(str0)
     return str0
-oddNumbers(5)
-oddNumbers(8)
-oddNumbers(-8)
-oddNumbers(80)
+
 
 
 def backwards(n)-> int:
@@ -45,7 +42,6 @@ def backwards(n)-> int:
        i=i-1
     print(str0)
     return str0
-backwards(5)
 
 def randomRepeating():
     """
@@ -100,7 +96,7 @@ def reverse(word:str)->str:
 SS=reverse("Hello")
 reverse("Hello World")
 
-def fizzBuzzContinuous(n):
+def fizzBuzzContinuous(n)->str:
     """
     Modify the function such that it does the fizzbuzz operation on all numbers
     from 1 to n(inclusive).
@@ -132,6 +128,7 @@ def fizzBuzzContinuous(n):
     print(str0)
     return str0
 fizzBuzzContinuous(15)
+
 
 def collatz(n):
     """
