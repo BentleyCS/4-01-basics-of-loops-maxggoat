@@ -127,12 +127,8 @@ def fizzBuzzContinuous(n)->str:
 
     print(str0)
     return str0
-fizzBuzzContinuous(15)
-fizzBuzzContinuous(5)
-fizzBuzzContinuous(1)
-fizzBuzzContinuous(45)
 
-def collatz(n):
+def collatz(n)->str:
     """
     Modify this function such that it mimics the collatz conjecture starting at n
     and prints out each number.
@@ -142,16 +138,21 @@ def collatz(n):
     :param n:
     :return:
     """
+    str0=str(n)
+
     while n != 1:
         if n % 2 == 0:
             n = n // 2
-            print(n)
+            str0 = str0 +" "+ str(n)
         else:
             n = 3*n + 1
-        print(n)
-    return n
+            str0 = str0 +" "+str(n)
+    print(str0)
+    return str0
 collatz(5)
-
+collatz(15)
+collatz(200)
+collatz(1)
 
 def fibonacci(n):
     """
