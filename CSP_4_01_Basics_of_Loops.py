@@ -125,6 +125,10 @@ def fizzBuzzContinuous(n):
                 str0=str0+ " " + "Fizz"
             if i1 % 5 == 0 and i1 % 3 != 0:
                 str0=str0+ " " + "Buzz"
+            if i1 % 5 != 0 and i1 % 3 != 0:
+                str0 = str0 + " " + str(i1)
+
+    print(str0)
 
 fizzBuzzContinuous(15)
 
