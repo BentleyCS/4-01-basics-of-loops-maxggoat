@@ -149,10 +149,7 @@ def collatz(n)->str:
             str0 = str0 +" "+str(n)
     print(str0)
     return str0
-collatz(5)
-collatz(15)
-collatz(200)
-collatz(1)
+
 
 def fibonacci(n):
     """
@@ -167,12 +164,12 @@ def fibonacci(n):
     :return:
     """
     if n == 1:
-        print("fibonacci(0) -> 0")
+        print("0")
     if n == 2:
-        print("fibonacci(1) -> 0 1")
+        print("0 1")
     if n >= 3:
         x=[0,1]
-        str0="fibonacci(1) -> 0 1"
+        str0="0 1"
         i=3
 
         while i <= n:
@@ -182,4 +179,6 @@ def fibonacci(n):
 
     print(str0)
     return str0
-fibonacci(300)
+fibonacci(15)
+fibonacci(5)
+fibonacci(6)
